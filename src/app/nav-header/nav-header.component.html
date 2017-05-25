@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <ul class="nav nav-tabs">
+    <li class="tab-width text-center" [class.active]="isSearchActive">
+      <a routerLink="/Search" (click)="changeActiveLink('/Search')" aria-expanded="true">
+        <h6><b>Search</b></h6>
+      </a>
+    </li>
+    <li class="tab-width text-center" [class.active]="!isSearchActive">
+      <a routerLink="/AllUsers" (click)="changeActiveLink('/AllUsers')" aria-expanded="false">
+        <h6><b>Staff directory</b></h6>
+      </a>
+    </li>
+  </ul>
+  </div>
+

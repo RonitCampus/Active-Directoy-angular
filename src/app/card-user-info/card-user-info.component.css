@@ -1,0 +1,34 @@
+.user-pic {
+  max-height: 80px;
+  max-width: 80px;
+}
+
+.name-header {
+  margin-top: 0;
+}
+
+.location-icon {
+  padding: 0;
+}
+
+.location-icon-color {
+  color: #666666;
+}
+
+.location-icon-color:hover {
+  color: dodgerblue;
+}
+
+.mail-icon-color {
+  color: #666666;
+  text-decoration: none !important;
+}
+
+.mail-icon-color:hover {
+  color: darkorange;
+}
+
+.user-info-card{
+  padding-left: 12px;
+  padding-right: 12px;
+}

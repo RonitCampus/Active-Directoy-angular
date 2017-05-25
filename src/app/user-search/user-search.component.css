@@ -1,0 +1,22 @@
+ .name-header {
+   margin-top: 0;
+ }
+
+ .input-name {
+   padding-top: 7px;
+ }
+
+ .user-pic {
+   max-height: 80px;
+   max-width: 80px;
+ }
+
+ .btn-expand {
+   color: dimgrey;
+ }
+
+ .cards-container {
+  margin-top: 30px;
+  padding-right: 0;
+  padding-left: 0;
+}

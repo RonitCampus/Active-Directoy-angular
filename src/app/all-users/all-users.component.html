@@ -1,0 +1,63 @@
+<div class="container cards-container">
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-9 text-right">
+      <div class="btn-group btn-view-option">
+        <a (click)="changeView(currentViewType)" class="btn btn-default btn-view"><i class="fa fa-th" aria-hidden="true"></i> {{currentViewType}} view</a>
+        <a class="btn btn-default dropdown-toggle btn-view" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="btn-view" (click)="changeView('Card')"><i class="fa fa-th" aria-hidden="true"></i> Card View </a>
+          </li>
+          <li>
+            <a class="btn-view" (click)="changeView('List')"> <i class="fa fa-list-ul" aria-hidden="true"></i> List View </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container cards-container">
+  <!--<app-card-user-info (onAddressClicked)="lgModal.show()" *ngFor="let c of arr"></app-card-user-info>-->
+  <app-list-user-info></app-list-user-info>
+</div>
+
+<!-- Modal -->
+<!--<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h5 class="modal-title">Address</h5>
+        <hr>
+      </div>
+      <div class="modal-body">
+        <p>Flat no 101 kasturi sakshi apartment opposite vishal mega mart.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title pull-left">Large modal</h5>
+        <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <hr>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="lgModal.hide()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

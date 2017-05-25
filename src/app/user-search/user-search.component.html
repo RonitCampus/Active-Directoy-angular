@@ -1,0 +1,34 @@
+<div class="container cards-container">
+        <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="pull-right"><img class="img-responsive img-thumbnail user-pic" src="assets/_images/Untitled2.png"></div>
+          <h6 class="name-header">Search with</h6>
+          <div class="input-group col-xs-8">
+            <span class="input-group-addon"><i class="fa fa-id-badge" aria-hidden="true"></i></span>
+            <input type="text" class="form-control input-sm" placeholder="Id">
+          </div>
+          <div class="input-group col-xs-8 input-name">
+            <span class="input-group-addon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+            <input type="text" class="form-control input-sm" placeholder="Name">
+          </div>
+          <div id="advance" [@animationToggleAdvanceSearch]='state'>
+            <div class="input-group col-xs-8 input-name">
+              <span class="input-group-addon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span>
+              <input type="text" class="form-control input-sm" placeholder="Extension">
+            </div>
+            <div class="input-group col-xs-8 input-name">
+              <span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+              <input type="text" class="form-control input-sm" placeholder="Address">
+            </div>
+          </div>
+          <div class="pull-right">
+            <button (click)="toggleAdvanceSearchOptions();" class="btn btn-link btn-expand fa fa-lg" [class.fa-angle-double-down]="!showAdvanceSearchOptions"
+              [class.fa-angle-double-up]="showAdvanceSearchOptions" aria-hidden="true"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

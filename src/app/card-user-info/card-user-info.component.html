@@ -1,0 +1,33 @@
+<div class="col-xs-12 col-sm-6 col-md-4 user-info-card">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="pull-right"><img class="img-responsive img-thumbnail user-pic" src="http://placehold.it/80x80"></div>
+      <h6 class="name-header">{{Name}}</h6>
+     <div class="col-xs-1"><i class="fa fa-id-badge" aria-hidden="true"></i></div>
+      <div class="col-xs-6">{{ID}}</div>
+      <br>
+      <div class="col-xs-1"><i class="fa fa-sitemap" aria-hidden="true"></i></div>
+      <div class="col-xs-6">Senior Associate</div>
+      <br>
+      <div class="col-xs-1"  placement="right" tooltip="Click to send mail">
+        <a href="mailto:rragashe@infocepts.com" class="fa fa-envelope-o mail-icon-color" aria-hidden="true"></a>
+      </div>
+      <div class="col-xs-6">{{EmailId}}</div>
+      <br>
+      <div class="col-xs-1"><i class="fa fa-skype" aria-hidden="true"></i></div>
+      <div class="col-xs-4">{{SkypeId}}</div>
+      <div class="col-xs-1"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+      </div>
+      <div class="col-xs-2">{{Extension}}</div>
+      <br>
+      <div class="col-xs-1"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+      <div class="col-xs-4">{{MobileNumber}}</div>
+      <div class="col-xs-1"><i class="fa fa-home" aria-hidden="true"></i></div>
+      <div class="col-xs-4">{{HomeNumber}}</div>
+      <div class="col-xs-1 pull-right location-icon center-block" placement="top" tooltip="Address">
+        <button (click)="onAddrClicked()" class="btn-xs btn-link fa fa-map-marker location-icon-color"></button>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.name-header {
+  margin-top: 0;
+}
+
+.location-icon {
+  padding: 0;
+}
+
+.location-icon-color {
+  color: #666666;
+}
+
+.location-icon-color:hover {
+  color: dodgerblue;
+}
+
+.mail-icon-color {
+  color: #666666;
+  text-decoration: none !important;
+}
+
+.mail-icon-color:hover {
+  color: darkorange;
+}
+
+.cards-container {
+  margin-top: 30px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.tab-width {
+  width: 50%;
+}
+
+.btn-view-option{
+  padding-right: 12px !important;
+}
+
+.btn-view{
+  cursor:pointer !important;
+}
